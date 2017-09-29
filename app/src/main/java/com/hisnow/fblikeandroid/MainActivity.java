@@ -1,15 +1,18 @@
 package com.hisnow.fblikeandroid;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
-import com.hisnow.fb_like.FbMainActivity;
+import com.hisnow.fb_like.activity.AdapterViewFilperActivity;
+import com.hisnow.fb_like.activity.FbMainActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -29,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
     public void sayHi() {
         tvJump.setTextColor(Color.BLUE);
         tvJump.setText(FbMainActivity.returnStr("你好"));
+        startActivity(new Intent(MainActivity.this, AdapterViewFilperActivity.class));
     }
 
 }
