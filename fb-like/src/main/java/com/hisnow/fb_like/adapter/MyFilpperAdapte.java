@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 
+import com.bumptech.glide.Glide;
 import com.hisnow.fb_like.R;
 
 /**
@@ -50,6 +51,7 @@ public class MyFilpperAdapte extends BaseAdapter {
             imageView = (ImageView) convertView;
         }
         // 给ImageView设置图片资源
+//        Glide.with(mContex).load(imgIds[position]).into(imageView);
         imageView.setImageResource(imgIds[position]);
 
         return imageView;

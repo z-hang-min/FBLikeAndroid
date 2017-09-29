@@ -31,6 +31,8 @@ dependencies {
     compile 'com.jakewharton:butterknife:8.8.1'
     apt 'com.jakewharton:butterknife-compiler:8.8.1'
     testCompile 'junit:junit:4.12'
+    compile 'com.github.bumptech.glide:glide:4.1.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.1.1'
 }
 ext {
     bintrayRepo = 'maven'
@@ -44,7 +46,7 @@ ext {
     siteUrl = 'https://github.com/z-hang-min/FBLikeAndroid'
     gitUrl = 'https://github.com/z-hang-min/FBLikeAndroid.git'
 
-    libraryVersion = '1.0.5'
+    libraryVersion = '1.0.6'
 
     developerId = 'hisnow'
     developerName = 'hisnow'

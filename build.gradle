@@ -20,6 +20,7 @@ allprojects {
         maven {
             url 'https://dl.bintray.com/hisnow/maven/'
         }
+        maven { url 'https://maven.google.com' }
     }
 }
 
