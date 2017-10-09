@@ -52,6 +52,7 @@ public class MyFilpperAdapte extends BaseAdapter {
         }
         // 给ImageView设置图片资源
         Glide.with(mContex).load(imgIds[position]).into(imageView);
+
 //        imageView.setImageResource(imgIds[position]);
 
         return imageView;
